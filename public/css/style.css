@@ -80,9 +80,8 @@ a{
 }
 /* --------------------- header slider----------------------------- */
 .header_slider_conatainer{
-    margin: 3%;
+    margin: 3% 7%;
     border-radius: 10px;
-    background-color: blueviolet;
     height: 450px;
 }
 
@@ -102,12 +101,11 @@ a{
 
 /* ---------------------- brand container------------------------------- */
 .brands_conatiner{
-    margin: 3%;
+    margin: 7%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 20px;
 }
-
 .brand{
     height: 250px;
     border-radius: 10px;
@@ -119,8 +117,11 @@ a{
     font-weight: 700;
     border:  1px solid black;
     text-transform: uppercase;
+    cursor: pointer;
 }
-
+.brand:hover{
+    opacity: .7;
+}
 .brand-4 img ,
 .brand-5 img{
     height: 50%;
@@ -141,14 +142,15 @@ a{
 .new_products_wrapper{
     display: flex;
     flex-direction: column;
-    margin: 3%;
+    margin: 7%;
 }
 
 .new_container{
     height: 400px;
-    padding: 10px;
+    padding: 2rem;
     border-radius: 10px;
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
+    background-color: #00000048;
     margin:20px 0;
     display: flex;
     align-items: flex-start;
@@ -196,4 +198,61 @@ a{
 .footer_container{
     height: 80vh;
     width: 100%;
+}
+
+/* --------------------- register page-------------------------------- */
+.register_container{
+   width: 400px;
+   margin: 10% auto;
+   padding: 20px;
+   background-color: rgba(189, 189, 189, 0.623);
+   border-radius: 10px;
+   
+
+}
+.register_container form{
+    display: flex;
+    flex-direction: column;
+}
+.register_container form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    outline:none;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+}
+.register_container form button{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    outline:none;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+
+h3,h4{ 
+    text-align: center;
+    margin: 20px 0;
+}
+h3{
+    font-size: 25px;
+}
+.register_container form .facebook-btn,
+.register_container form .google-btn{
+    color: white;
+    cursor: pointer;
+}
+.register_container form .facebook-btn{ background-color: #3759CF;}
+.register_container form .google-btn{background-color: #C31D1D;}
+
+.register_container  a {
+    color: rgb(25, 9, 250);
+    text-transform: capitalize;
+    text-decoration: underline;
 }

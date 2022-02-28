@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clothes shop</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-</head>
-<body>
-    
+<%- include('header') %>
 
     <!-- NAVIGATION -->
     <nav class="nav_conatiner">
@@ -26,7 +15,7 @@
         <div class="tools_container">
             <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
             <img src="https://img.icons8.com/ios/32/000000/bookmark-ribbon--v1.png"/>
-            <button class="singUp_btn">Sing up</button>
+           <a href="/register"><button class="singUp_btn">Sing up</button></a> 
         </div>
     </nav>
 
@@ -40,20 +29,22 @@
 
     <!-- brands -->
 <div class="barnd_wrapper">
-    <h1 class="title">MOST POPULAR THIS WEEK</h1>
+    <h1 class="title">MOST POPULAR BRANDS</h1>
     <div class="brands_conatiner">
         <div class="brand brand-1"><img src="https://img.icons8.com/ios-filled/50/000000/nike.png"/></div>
         <div class="brand brand-2"><img src="https://img.icons8.com/ios/50/000000/adidas-trefoil.png"/></div>
         <div class="brand brand-3"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/000000/external-puma-a-german-multinational-company-designs-and-manufactures-athletic-and-casual-footwear-apparel-and-accessories-fashion-bold-tal-revivo.png"/></div>
         <div class="brand brand-4"><img src="https://static.cdnlogo.com/logos/r/24/reebok.svg" alt=""></div>
         <div class="brand brand-5"><img src="https://static.cdnlogo.com/logos/c/8/calvin-klein.svg" alt=""></div>
-        <div class="brand brand-6">others</div>
+        <div class="brand brand-5"><img src="https://static.cdnlogo.com/logos/c/8/calvin-klein.svg" alt=""></div>
     </div>
 </div>
 
 <!--  WHAT IS NEW -->
 
 <div class="new_products_wrapper">
+    <h1 class="title">MOST POPULAR THIS WEEK</h1>
+
     <div class="new_container men">
         <div class="left"><img src="" alt=""></div>
         <div class="right">
@@ -114,6 +105,4 @@
 <div class="footer_container">
 </div>
 
-    <script src="app.js"></script>
-</body>
-</html>
+<%- include('footer')%>

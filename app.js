@@ -17,6 +17,16 @@ app.get('/', (req , res)=>{
 })
 
 
+app.get('/register', (req , res)=>{
+    res.render('register')
+})
+
+app.get('/login', (req , res)=>{
+    res.render('login')
+})
+
+
+
 
 
 app.listen(4000, ()=> console.log("server running on port 4000"));
