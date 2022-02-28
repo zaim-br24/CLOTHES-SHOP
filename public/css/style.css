@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*----------------- colors variables----------------------- */
+:root{
+    --body-background-color: #f5f5f5;
+    --content-background-color:#ffffff;
+    --black-color:#000000;
+    --white-color:#ffffff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    max-width: 100vw;
+    background-color: var(--body-background-color);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* ----------------------- duplicate classes-------------------------- */
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black-color);
+
+}
+.categories_container, 
+.tools_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* --------------------------------------------------------------------- */
+
+.nav_conatiner{
+    margin:2% 3%;
+    max-width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    background-color: var(--content-background-color) ;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.233);
+}
+.categories_container a{
+    margin-left: 20px;
+    font-weight: 700;
+}
+.categories_container a:hover{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.411);
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.tools_container img, 
+.tools_container button{
+    margin-right: 20px;
+
+}
+
+.singUp_btn{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.singUp_btn:hover{
+    transform: scale(1.1);
+}
+/* --------------------- header slider----------------------------- */
+.header_slider_conatainer{
+    margin: 3%;
+    border-radius: 10px;
+    background-color: blueviolet;
+    height: 450px;
+}
+
+.slider_conatainer{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.slider_conatainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+
+}
+
+/* ---------------------- brand container------------------------------- */
+.brands_conatiner{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-gap: 20px;
+}
+
+.brand{
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgba(0, 0, 0, 0.63);
+    font-size: 30px;
+    font-weight: 700;
+    border:  1px solid black;
+    text-transform: uppercase;
+}
+
+.brand-4 img ,
+.brand-5 img{
+    height: 50%;
+}
+.brand-1{background-color: #2de7a3b4;}
+.brand-2{background-color: #fff069b6;}
+.brand-3{background-color: #1f50ccb6;}
+.brand-4{background-color: #dfa167bd;}
+.brand-5{background-color: #2a1b64be;}
+.brand-6{background-color: #ea2323b9;}
+
+.title{
+    text-align: center;
+    margin: 5% 0;
+}
+
+/* -------------------------- new products------------------------------- */
+.new_products_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.new_container{
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    margin:20px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left{
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40%;
+}
+.right{
+    margin: 0 20px;
+    height: 100%;
+    width: 60%;
+}
+.right h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    display:inline-block;
+    margin-left: 15px;
+}
+.new_product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 85%;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+.product_img{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));    
+    grid-gap: 10px;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+/* -------------- footer------------------------- */
+.footer_container{
+    height: 80vh;
+    width: 100%;
+}
