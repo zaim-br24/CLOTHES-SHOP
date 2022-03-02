@@ -36,11 +36,16 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+
+.tools_container img{
+    height: 25px;
+    cursor: pointer;
+}
 /* --------------------------------------------------------------------- */
 
 .nav_conatiner{
     margin:2% 3%;
-    max-width: 100%;
+    width: 95%;
     display: flex;
     align-items: center ;
     justify-content: space-between;
@@ -48,6 +53,10 @@ a{
     padding: 10px 20px;
     border-radius: 25px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.233);
+    top: 0;
+    position: fixed;
+    z-index: 10;
+
 }
 .categories_container a{
     margin-left: 20px;
@@ -65,7 +74,7 @@ a{
 }
 
 .singUp_btn{
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     outline: none;
     background-color: var(--black-color);
@@ -85,6 +94,7 @@ a{
     border-radius: 10px; */
     border:1px solid rgba(0, 0, 0, 0.418) ;
     position: relative;
+    top:100px ;
     margin: 3% 7%;
 
 }
@@ -258,11 +268,7 @@ a{
     border-radius: 10px;
 }
 
-/* -------------- footer------------------------- */
-.footer_container{
-    height: 80vh;
-    width: 100%;
-}
+
 
 /* --------------------- register page-------------------------------- */
 .register_container{
@@ -360,4 +366,39 @@ h3{
  }
  .products_conatainer .card_conatainer .item button:hover{
      width: 85%;
+}
+
+
+/* -------------- footer------------------------- */
+.footer_container{
+    width: 100%;
+    padding: 5%;
+    border-top: 1px solid rgba(0, 0, 0, 0.226);
+    display: flex;
+    align-items: flex-start;
+}
+.footer_container .container{
+    width: 25%;
+}
+.footer_collection_title{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+.further_Information a{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.61);
+    text-transform: capitalize;
+}
+.further_Information a:hover{
+   color: rgba(0, 0, 0, 0.781);
+   font-size: 15px;
+}
+.further_Information{
+    display: flex;
+    flex-direction: column;
 }
