@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+<%- include('navbar') %>
+
+    <div class="products_conatainer">
+        <div class="card_conatainer">
+            <% collection.forEach((collection)=>{ %>
+                <div class="item">
+                    <img src=<%= collection.image_url %>  alt="">
+                    <div class="details">
+                        <p class="item-name"><%= collection.name %> </p>
+                        <p class="item-description"><%= collection.description %> </p>
+                        <p class="item-price"><%= collection.price %>$</p>
+                    </div>
+                    <button>add to card</button>
+                </div>
+              <% }); %>
+        </div>
+    </div>
+
+<%- include('partials/footer') %>

@@ -1,42 +1,32 @@
 
-<%- include('header') %>
-
-    <!-- NAVIGATION -->
-    <nav class="nav_conatiner">
-        <div class="categories_container">
-            <a href="/men">men</a>
-            <a href="/women">women</a>
-            <a href="/kids">kids</a>
-        </div>
-        <div class="log_container">
-            <a href="/">logo</a>
-        </div>
-
-        <div class="tools_container">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
-            <img src="https://img.icons8.com/ios/32/000000/bookmark-ribbon--v1.png"/>
-           <a href="/register"><button class="singUp_btn">Sing up</button></a> 
-        </div>
-    </nav>
+<%- include('partials/header') %>
+<%- include('navbar') %>
 
 
     <!-- header slider -->
-    <div class="header_slider_conatainer">
-        <div class="slider_conatainer">
-            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+         <div class="wrapper_slider">
+            <div class="image_container">
+               <div class="slider_img">
+                    <img class="slider_image" alt="">
+               </div>
+               
+                <!-- Next and previous buttons -->
+               <a class="prev"  onclick="prev()">&#10094;</a>
+               <a class="next"  onclick="next()">&#10095;</a>
+            </div>
         </div>
-    </div>
 
     <!-- brands -->
 <div class="barnd_wrapper">
     <h1 class="title">MOST POPULAR BRANDS</h1>
     <div class="brands_conatiner">
-        <div class="brand brand-1"><img src="https://img.icons8.com/ios-filled/50/000000/nike.png"/></div>
-        <div class="brand brand-2"><img src="https://img.icons8.com/ios/50/000000/adidas-trefoil.png"/></div>
-        <div class="brand brand-3"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/000000/external-puma-a-german-multinational-company-designs-and-manufactures-athletic-and-casual-footwear-apparel-and-accessories-fashion-bold-tal-revivo.png"/></div>
-        <div class="brand brand-4"><img src="https://static.cdnlogo.com/logos/r/24/reebok.svg" alt=""></div>
-        <div class="brand brand-5"><img src="https://static.cdnlogo.com/logos/c/8/calvin-klein.svg" alt=""></div>
-        <div class="brand brand-5"><img src="https://static.cdnlogo.com/logos/c/8/calvin-klein.svg" alt=""></div>
+       <a href="/brand/nike"><div class="brand brand-1"><img src="https://img.icons8.com/ios-filled/50/000000/nike.png"/> </div></a>
+        <a href="/brand/adidas"> <div class="brand brand-2"><img src="https://img.icons8.com/ios/50/000000/adidas-trefoil.png"/> </div></a>
+        <a href="/brand/puma"> <div class="brand brand-3"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/000000/external-puma-a-german-multinational-company-designs-and-manufactures-athletic-and-casual-footwear-apparel-and-accessories-fashion-bold-tal-revivo.png"/></div></a>
+        <a href="/brand/reebok"> <div class="brand brand-4"><img src="https://static.cdnlogo.com/logos/r/24/reebok.svg" alt=""></div></a>
+        <a href="/brand/calvin-klein"> <div class="brand brand-5"><img src="https://static.cdnlogo.com/logos/c/8/calvin-klein.svg" alt=""></div></a>
+        <a href="/brand/gucci"> <div class="brand brand-6"><img src="https://static.cdnlogo.com/logos/g/60/gucci.svg" alt=""></div></a>
     </div>
 </div>
 
@@ -46,19 +36,25 @@
     <h1 class="title">MOST POPULAR THIS WEEK</h1>
 
     <div class="new_container men">
-        <div class="left"><img src="" alt=""></div>
+        <div class="left"><img src="https://f-trend.com/sites/default/files/full%20catwalk%20collection/kiton-m-po-rs22-0069.jpg" alt=""></div>
         <div class="right">
             <h2>new in men</h2>
             <div class="new_product">
+             <a href="#">
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://ae01.alicdn.com/kf/H1c9e5d76d224464ead5c9106b37eb6c9b/2022-Men-s-Fashion-Trend-Haren-Pants-Holes-Baggy-Homme-Wash-Jeans-Black-Color-Casual-Pants.jpg_Q90.jpg_.webp" alt="">
                 </div>
+            </a>
+            <a href="#">
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_nuAIg_PtBtCmrlCdnzW5ctQv533PmGydSn3C6a_o-SFIAdGZPmz5jKGx2Wzx__isQjw&usqp=CAU" alt="">
                 </div>
+            </a>
+            <a href="#">
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMp73QsdeVuUvac7J9sZw9pSGZQa_-MBqOZZH5VEZHR9QbAQMDDCNRtQHdvDuVe5E46pk&usqp=CAU" alt="">
                 </div>
+            </a>
             </div>
         </div>
     </div>
@@ -67,32 +63,32 @@
             <h2>new in women</h2>
             <div class="new_product">
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://glorytrends.com/wp-content/uploads/2021/07/plus-size-fashion-2022-1.jpg" alt="">
                 </div>
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-720w,f_auto,q_auto:best/newscms/2022_01/1826928/screen_shot_2022-01-06_at_12-12-32_pm.png" alt="">
                 </div>
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://www.refinery29.com/images/10843428.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="left"><img src="" alt=""></div>
+        <div class="left"><img src="https://www.gannett-cdn.com/presto/2022/01/12/USAT/b673361c-c0c9-4444-b0e0-7375dfbd1bd6-6.jpg" alt=""></div>
 
     </div>
     <div class="new_container kids">
-        <div class="left"><img src="" alt=""></div>
+        <div class="left"><img src="https://www.2luxury2.com/wp-content/uploads/2021/04/BimboAddJunior2021.jpg" alt=""></div>
         <div class="right">
             <h2>new in kids</h2>
             <div class="new_product">
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://dress-trends.com/wp-content/uploads/2022/01/kids-clothes-2022-9.jpg" alt="">
                 </div>
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://i.pinimg.com/originals/b7/cf/3d/b7cf3dad82f1d59c1990a25eddfde6b9.png" alt="">
                 </div>
                 <div class="product_img">
-                    <img src="" alt="">
+                    <img src="https://www.2luxury2.com/wp-content/uploads/2021/04/FW2021DondupKids.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -102,7 +98,7 @@
 
 <!-- FOOTER -->
 
-<div class="footer_container">
-</div>
+    <div class="footer_container">
+     </div>
 
-<%- include('footer')%>
+<%- include('partials/footer')%>

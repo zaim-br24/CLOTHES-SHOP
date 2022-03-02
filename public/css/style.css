@@ -78,26 +78,78 @@ a{
 .singUp_btn:hover{
     transform: scale(1.1);
 }
-/* --------------------- header slider----------------------------- */
-.header_slider_conatainer{
+/* ________________________ HEADER SLIDER __________________________ */
+.wrapper_slider{
+    height: 600px;
+    /* box-shadow: 0px 2px 18px 5px rgba(0,0,0,0.36);
+    border-radius: 10px; */
+    border:1px solid rgba(0, 0, 0, 0.418) ;
+    position: relative;
     margin: 3% 7%;
-    border-radius: 10px;
-    height: 450px;
-}
-
-.slider_conatainer{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-.slider_conatainer img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
 
 }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: 0 10px;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: black;
+  }
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.prev{
+      left: 0;
+    border-radius: 3px 0 0 3px;
+
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(71, 71, 71, 0.8);
+  }
+.image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.slider_img{
+    height: 100%;
+    width: 100%;
+
+}
+.slider_img img{
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+   object-position: center;
+   transition: 1s ease-in;
+
+}
+
+.image_slider_animation{
+    animation-name: imageSlider;
+    animation-duration: 1s;
+}
+@keyframes imageSlider {
+    from {transform: translateX(70%);}
+    to {transform: translateX(0%);}
+}
+
 
 /* ---------------------- brand container------------------------------- */
 .brands_conatiner{
@@ -123,7 +175,8 @@ a{
     opacity: .7;
 }
 .brand-4 img ,
-.brand-5 img{
+.brand-5 img,
+.brand-6 img{
     height: 50%;
 }
 .brand-1{background-color: #2de7a3b4;}
@@ -150,13 +203,19 @@ a{
     padding: 2rem;
     border-radius: 10px;
     /* background-color: var(--white-color); */
-    background-color: #00000048;
-    margin:20px 0;
+    /* background-color: #00000048; */
+    margin: 4rem 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-
+.new_container img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
 .left{
     height: 100%;
     border: 1px solid black;
@@ -177,21 +236,26 @@ a{
     margin-left: 15px;
 }
 .new_product{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));    
+    grid-gap: 10px;
     height: 85%;
     margin-top: 20px;
     /* border: 1px solid black; */
 }
 .product_img{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));    
-    grid-gap: 10px;
-    height: 90%;
-    border: 1px solid black;
+
+    height: 285px;
+    border: 2px solid rgba(0, 0, 0, 0.473);
     border-radius: 10px;
 
+}
+.product_img img{
+    height: 285px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* -------------- footer------------------------- */
@@ -235,7 +299,6 @@ a{
     border: none;
 }
 
-
 h3,h4{ 
     text-align: center;
     margin: 20px 0;
@@ -254,5 +317,47 @@ h3{
 .register_container  a {
     color: rgb(25, 9, 250);
     text-transform: capitalize;
-    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+}
+.register_container a:hover {text-decoration: underline;}
+
+
+
+/* ----------------- products page---------------------- */
+.products_conatainer{
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products_conatainer .card_conatainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
+    grid-gap: 10px;
+}
+.products_conatainer .card_conatainer .item{
+    display: flex;
+    flex-direction: column;
+}
+.products_conatainer .card_conatainer .item img{
+   width: 100%;
+}
+.products_conatainer .card_conatainer .item .details{
+    margin: 20px auto;
+    text-align: center;
+ }
+ .products_conatainer .card_conatainer .item button{
+     padding: 10px;
+     border: none;
+     outline: none;
+     font-size: 16px;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+     width: 80%;
+     margin: auto;
+ }
+ .products_conatainer .card_conatainer .item button:hover{
+     width: 85%;
 }
